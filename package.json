@@ -6,9 +6,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.13",
     "next": "latest",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-transition-group": "^4.4.5"
   },
   "devDependencies": {
     "@types/node": "18.11.3",
