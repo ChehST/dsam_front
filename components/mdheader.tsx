@@ -3,7 +3,7 @@ import React from 'react'
 function Mdheader() {
   return (
     <header className="h-3/4 bg-gray-900 px-2 absolute z-40 w-full text-white">
-        <div className="flex h-1/5 p-4 justify-center">
+        <div className="flex h-1/5 p-4 justify-start">
             <a className="font-bold mx-6" href="/">DanceSport.AM</a>
         </div>
         <div className="w-full h-2/3">
