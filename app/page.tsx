@@ -3,12 +3,12 @@ import About from "../components/about";
 import Value from "../components/value";
 import Services from "../components/services";
 import Formplate from "../components/formplate";
-import Mdheader from "../components/mdheader";
+import Header from "../components/header";
 
 function HomePage(){
     return(
         <>
-        <Mdheader />
+        <Header />
         <Greetings />
         <main>
             <About />
