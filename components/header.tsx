@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 
 function Header() {
+
   const [showMenu, setShowMenu] = useState(false);
 
   function toggleMenu() {
@@ -9,7 +10,7 @@ function Header() {
   }
 
   return (
-    <header className=" md:flex z-40 justify-between items-center h-24 w-full absolute text-white">
+    <header className={`md:flex z-40 justify-between items-center h-24 w-full absolute md:bg-transparent transition duration-500 ${showMenu ? 'bg-gray-900 transition duration-500' : 'delay-500'}} text-white`}>
       <div className="flex justify-between items-center h-full">
         <a className="font-bold mx-6" href="/">DanceSport.AM</a>
         <button className="md:hidden px-3" onClick={toggleMenu}>
@@ -19,11 +20,11 @@ function Header() {
         </button>
       </div>
 
-      <div className="flex justify-center">
-        <ul className={showMenu ? "md:inline-flex" : "md:inline-flex hidden"}>
-          <li><a className="inline-block py-3 px-2 hover:text-yellow-600" href="#About">О нас</a></li>
+      <div className={`flex justify-center item-center md:h-auto overflow-hidden transition-height duration-500 md:bg-transparent ${showMenu ? "bg-gray-900 h-60 transition-height duration-500" : "h-0"} `}>
+        <ul className={showMenu ? "md:inline-flex text-center" : "md:inline-flex hidden"}>
+          <li><a className="md:mt-0 mt-6 inline-block py-3 px-2 hover:text-yellow-600" href="#About">О нас</a></li>
           <li><a className="inline-block py-3 px-2 hover:text-yellow-600" href="#Services">Уроки танцев</a></li>
-          <button className="inline-block py-1 px-5 mx-6 border-2 rounded-full border-orange-500 text-orange-500 hover:text-white hover:bg-orange-500 transition-all duration-300 delay-200">Запись</button>
+          <button className="md:mt-0 mt-8 btn-singup">Запись</button>
         </ul>
       </div>
     </header>
