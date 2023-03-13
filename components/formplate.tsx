@@ -1,5 +1,6 @@
 'use client'
 import FeedbackForm from "./form"
+// import Countdown from "./timer"
 
 function Formplate() {
   return (
@@ -8,6 +9,7 @@ function Formplate() {
             <div className="md:w-7/12 pt-6 w-full">
                 <h2 className="text-start text-5xl font-bold">Запишитесь на первое занятия</h2>
                 <p className="text-start text-2xl font-thin py-4">Открыт набор в детскую группу от 4-6 лет. <br /> Успейте на запись!</p>
+            {/* <Countdown /> */}
             </div>
             <FeedbackForm />
         </div>
